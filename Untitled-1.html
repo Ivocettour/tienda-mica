@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Bikinis y Ropa Deportiva</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        /* Sección de productos */
+        .products-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-info h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .product-info p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0.5rem 0;
+        }
+
+        .product-info .price {
+            font-weight: bold;
+            color: #e91e63;
+            font-size: 1.2rem;
+        }
+
+        /* Sección de contacto */
+        .contact-section {
+            background-color: #222;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            margin: 0.5rem 0;
+        }
+
+        .contact-section a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Bikinis y Ropa Deportiva</h1>
+    </header>
+
+    <section class="products-section">
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400" alt="Bikini Clásico" class="product-image">
+                <div class="product-info">
+                    <h2>Bikini Clásico</h2>
+                    <p>Perfecto para el verano, disponible en varios colores.</p>
+                    <p class="price">$25.00</p>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400" alt="Bikini Deportivo" class="product-image">
+                <div class="product-info">
+                    <h2>Bikini Deportivo</h2>
+                    <p>Ideal para actividades acuáticas y ejercicio.</p>
+                    <p class="price">$30.00</p>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400" alt="Top Deportivo" class="product-image">
+                <div class="product-info">
+                    <h2>Top Deportivo</h2>
+                    <p>Comodidad y soporte para entrenamientos intensos.</p>
+                    <p class="price">$20.00</p>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x400" alt="Leggings de Entrenamiento" class="product-image">
+                <div class="product-info">
+                    <h2>Leggings de Entrenamiento</h2>
+                    <p>Flexibilidad y estilo para todas tus rutinas.</p>
+                    <p class="price">$35.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta sobre nuestros productos?</p>
+        <p>Envíanos un correo a <a href="mailto:contacto@tutienda.com">contacto@tutienda.com</a></p>
+    </section>
+</body>
+</html>
